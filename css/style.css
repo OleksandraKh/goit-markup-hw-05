@@ -41,7 +41,7 @@ body {
   margin-bottom: 0;
   text-decoration: none;
   padding-bottom: 25px;
-  padding-top: 32px;
+  padding-top: 24px;
 }
 
 .is-hidden {
@@ -68,6 +68,8 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 1200px;
 }
 
@@ -102,7 +104,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
+  /* align-items: center; */
+    
   /* outline: 2px solid blue; */
 }
 
@@ -118,10 +121,19 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.studio::before{
+.studio::after{
 
-  
+  content: '';
+  display: block;
+  width: 100%;
+height: 4px;
+position: relative;
+bottom: -28px;
+background-color: #2196F3;
+border-radius: 2px;
 }
+
+
 .contact-container {
   display: flex;
   margin-left: auto;
@@ -849,6 +861,20 @@ footer {
 }
 
 /* Портфолио */
+
+.portfolio::after{
+
+  content: '';
+  display: inline-block;
+  width: 100%;
+height: 4px;
+position: relative;
+bottom: -29px;
+background-color: #2196F3;
+border-radius: 2px;
+}
+
+
 .container-portfolio {
   margin-left: auto;
   margin-right: auto;
