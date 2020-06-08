@@ -102,6 +102,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
   /* outline: 2px solid blue; */
 }
 
@@ -113,8 +114,14 @@ body {
 }
 .site-nav .link {
   color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.studio::before{
 
+  
+}
 .contact-container {
   display: flex;
   margin-left: auto;
@@ -133,6 +140,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  
+  fill: currentColor;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid fuchsia; */
 }
 
@@ -140,14 +152,13 @@ body {
   height: 12px;
   margin-right: 10px;
   background-size: contain;
-  fill: currentColor;
+  
 }
 
 .contact-nav .icon-telefon {
   width: 10px;
   height: 15px;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 .site-nav .link:hover,
@@ -204,6 +215,9 @@ body {
   line-height: 1.87;
   text-align: center;
   text-transform: none;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -442,6 +456,9 @@ body {
   height: 44px;
   justify-content: center;
   fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-instagram {
@@ -498,6 +515,11 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
 }
 
 .customer-logo:first-child {
@@ -697,6 +719,9 @@ footer {
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:focus,
@@ -780,7 +805,9 @@ footer {
   font-weight: 700;
   font-size: 16px;
   border: 1px solid transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-footer:hover,
@@ -792,17 +819,20 @@ footer {
 
 .btn-footer::after {
   content: url(../images/icon_send.svg);
-
   width: 24px;
   margin-left: 10px;
   background-size: contain;
+  fill: var(--primary-white-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-footer:hover ::after,
 .btn-footer:focus ::after {
-  /* background-color: var(--primary-white-color); */
-  color: var(--accent-color);
-  fill: inherit;
+  background-color: var(--primary-white-color);
+  
+  fill: var(--accent-color);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
@@ -848,6 +878,9 @@ footer {
 .filter-btn {
   margin-left: 8px;
   margin-right: 0;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -888,6 +921,9 @@ footer {
   margin-bottom: 0;
   text-decoration: none;
   border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
@@ -930,8 +966,10 @@ footer {
   padding: 10px 32px;
   min-width: 200px; /*минимальная длинна кнопки */
   border: 1px solid transparent; /*transparent - прозрачная рамка */
-
   text-align: center;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
