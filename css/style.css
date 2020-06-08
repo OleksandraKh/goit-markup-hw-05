@@ -20,12 +20,6 @@ html {
   box-sizing: inherit;
 }
 
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
 body {
   margin: 0;
   background-color: #ffffff;
@@ -109,9 +103,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   /* outline: 2px solid blue; */
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item {
@@ -123,17 +114,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .site-nav .link {
   color: var(--title-text-color);
 }
-.site-nav .studio::after{
-position: absolute;
-width: 47px;
-height: 4px;
-left: 454px;
-top: 76px;
 
-background: #2196F3;
-border-radius: 2px;
-
-}
 .contact-container {
   display: flex;
   margin-left: auto;
@@ -153,9 +134,6 @@ border-radius: 2px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   /* outline: 2px solid fuchsia; */
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-nav .icon-mail {
@@ -194,13 +172,11 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
       rgba(47, 48, 58, 0.8)
     ),
     url("../images/header_img.jpg");
-
-  /* outline: 2px solid blueviolet; */
 }
+
 .hero {
   text-align: center;
   height: 600px;
-  /* outline: 2px solid blueviolet; */
 }
 
 .hero-title {
@@ -219,18 +195,15 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .hero-button {
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px; /*минимальная длинна кнопки */
+  min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border: 1px solid transparent; /*transparent - прозрачная рамка */
+  border: 1px solid transparent;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   text-transform: none;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -351,27 +324,16 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .desctop-img {
   display: block;
-  /* width: 370px; */
-  /* height: 294px; */
-
-  /* background-image: url(../images/desctop_img.jpg); */
-  /* background-position: center; */
 }
 .mobile-img {
   display: block;
-  /* width: 370px; */
   height: 294px;
-
   background-image: url(../images/mobile_img.jpg);
   background-position: center;
 }
+
 .monitor-img {
   display: block;
-  /* width: 370px;
-  height: 294px;
-
-  background-image: url(../images/monitor_img.jpg);
-  background-position: center; */
 }
 
 .divace-subtitle {
@@ -383,7 +345,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  padding: 27px 85px 27px 86px;
+  padding: 27px;
   background-position: bottom;
 }
 
@@ -412,8 +374,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 .team {
   display: flex;
-  /* justify-content: center; */
-  /* margin-bottom: 24px; */
   /* outline: 2px solid tomato; */
 }
 
@@ -482,9 +442,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   height: 44px;
   justify-content: center;
   fill: #afb1b8;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-instagram {
@@ -541,11 +498,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* height: 90px; */
 }
 
 .customer-logo:first-child {
@@ -750,9 +702,6 @@ footer {
 .socials-link:focus,
 .socials-link:hover {
   background-color: var(--accent-color);
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-instagram {
@@ -788,7 +737,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 0;
   padding-top: 56px;
   padding-bottom: 50px;
-  /* display: flex; */
 
   /* outline: 2px solid white;d */
 }
@@ -800,8 +748,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 .mail-icon {
   display: inline-flex;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+
   margin-right: auto;
   margin-top: 21px;
   margin-bottom: 0;
@@ -809,7 +756,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-btn {
-  /* display: flex; */
   margin-right: 12px;
   margin-top: 0;
   margin-bottom: 0;
@@ -818,7 +764,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primary-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* box-sizing: border-box; */
+
   border-radius: 4px;
 }
 
@@ -835,13 +781,10 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-footer:hover,
-.btn-footer:focus  {
+.btn-footer:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -849,12 +792,10 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 .btn-footer::after {
   content: url(../images/icon_send.svg);
-  
-  /* fill: inherit; */
+
   width: 24px;
   margin-left: 10px;
   background-size: contain;
-  
 }
 
 .btn-footer:hover ::after,
@@ -864,16 +805,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   fill: inherit;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
-
-
-/* .icon-send {
-  fill: var(--primary-white-color);
-  width: 24px;
-  margin-left: 10px;
-  background-size: contain;
-
-  /* outline: 2px solid tomato; */
-} */
 
 .autor {
   margin-top: 0;
@@ -917,11 +848,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .filter-btn {
   margin-left: 8px;
   margin-right: 0;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  /* padding-left: 15px;
-  padding-right: 15px; */
 }
 
 .filter-btn:hover,
@@ -929,6 +855,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
+
 .filter-btn:first-child {
   margin-left: 0;
 }
@@ -961,9 +888,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 0;
   text-decoration: none;
   border: 1px solid #eeeeee;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
@@ -1008,9 +932,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid transparent; /*transparent - прозрачная рамка */
 
   text-align: center;
-  transition-property: color;
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
